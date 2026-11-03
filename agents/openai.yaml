@@ -1,0 +1,4 @@
+interface:
+  display_name: "Claude Code 网络环境"
+  short_description: "准备与部署 OpenWrt 和 VPS 全局网络，支持离线配置、验收及回滚"
+  default_prompt: "使用 $claude-code-network 整理我的 OpenWrt 与 VPS 网络部署参数并生成配置；先做离线准备，不连接设备或执行实机测试。"

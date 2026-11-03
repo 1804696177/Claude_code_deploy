@@ -1,6 +1,6 @@
 #!/bin/sh
 # Fresh-install helper for ONE DHCP WAN + ONE LAN on OpenWrt/fw4.
-# Read README first. This script changes routing, DNS and firewall.
+# Read SKILL.md and references/router.md first. This script changes routing, DNS and firewall.
 set -e
 # OpenWrt UCI shell helpers use optional unset variables; do not enable nounset.
 STAGE=${1:-/root/us-vpn-stage}

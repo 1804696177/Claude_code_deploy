@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+# Local generated configurations, downloads and transfer directories contain credentials.
+/generated/
+/vpn-generated/
+/vpn-transfer/
+/router-stage/
+/us-vpn-stage/
+/xray-*-download/
+/reality-keys*.txt

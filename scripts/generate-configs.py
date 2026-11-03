@@ -39,7 +39,7 @@ out.mkdir(parents=True,mode=0o700)
 root=pathlib.Path(__file__).resolve().parent.parent
 mapping={'__VPS_IPV4__':a.vps_ip,'__SNI__':a.sni,'__PRIVATE_KEY__':private,'__PUBLIC_KEY__':public,'__UUID__':str(uuid.uuid4()),'__SHORT_ID__':secrets.token_hex(8),'__WAN_DEV__':a.wan_dev,'__LAN_DEV__':a.lan_dev,'__TUN_CIDR__':a.tun_cidr}
 def render(name):
- s=(root/'templates'/name).read_text()
+ s=(root/'assets'/'templates'/name).read_text()
  for key,val in mapping.items():s=s.replace(key,val)
  if re.search(r'__[A-Z0-9_]+__',s):raise ValueError('Unresolved template token')
  return s
